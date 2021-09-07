@@ -1,0 +1,44 @@
+com/example/notesapp/databinding/ActivitySplashScreenBinding.java
+ com.example.notesapp.databinding.ActivitySplashScreenBinding
+com/example/notesapp/MainActivity.java
+ com.example.notesapp.MainActivity
+ com.example.notesapp.MainActivity$1
+ com.example.notesapp.MainActivity$2
+ com.example.notesapp.MainActivity$3
+ com.example.notesapp.MainActivity$4
+com/example/notesapp/databinding/ActivityNoteDisplayBinding.java
+ com.example.notesapp.databinding.ActivityNoteDisplayBinding
+com/example/notesapp/InsertNoteActivity.java
+ com.example.notesapp.InsertNoteActivity
+com/example/notesapp/databinding/ActivityInsertNoteBinding.java
+ com.example.notesapp.databinding.ActivityInsertNoteBinding
+com/example/notesapp/Database/NotesDatabase.java
+ com.example.notesapp.Database.NotesDatabase
+com/example/notesapp/Adapter/NotesAdapter.java
+ com.example.notesapp.Adapter.NotesAdapter
+ com.example.notesapp.Adapter.NotesAdapter$notesViewHolder
+com/example/notesapp/UpdateNoteActivity.java
+ com.example.notesapp.UpdateNoteActivity
+com/example/notesapp/databinding/ItemNotesBinding.java
+ com.example.notesapp.databinding.ItemNotesBinding
+com/example/notesapp/databinding/DeleteBottomSheetBinding.java
+ com.example.notesapp.databinding.DeleteBottomSheetBinding
+com/example/notesapp/NoteDisplay.java
+ com.example.notesapp.NoteDisplay
+com/example/notesapp/databinding/ActivityMainBinding.java
+ com.example.notesapp.databinding.ActivityMainBinding
+com/example/notesapp/Dao/NotesDao.java
+ com.example.notesapp.Dao.NotesDao
+com/example/notesapp/BuildConfig.java
+ com.example.notesapp.BuildConfig
+com/example/notesapp/ViewModel/NotesViewModel.java
+ com.example.notesapp.ViewModel.NotesViewModel
+com/example/notesapp/Repository/NotesRepository.java
+ com.example.notesapp.Repository.NotesRepository
+com/example/notesapp/databinding/ActivityUpdateNoteBinding.java
+ com.example.notesapp.databinding.ActivityUpdateNoteBinding
+com/example/notesapp/SplashScreen.java
+ com.example.notesapp.SplashScreen
+ com.example.notesapp.SplashScreen$1
+com/example/notesapp/Model/Notes.java
+ com.example.notesapp.Model.Notes
