@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/grey"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/filer"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/filter3"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:id="@+id/nofilter"
+            android:paddingTop="7dp"
+            android:fontFamily="@font/product_sans_regular"
+            android:layout_margin="5dp"
+            android:paddingBottom="7dp"
+            android:background="@drawable/filter_selected_shape"
+            android:layout_gravity="center_vertical"
+            android:text="No Filter"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hightolow"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="7dp"
+            android:fontFamily="@font/product_sans_regular"
+            android:layout_margin="5dp"
+            android:paddingBottom="7dp"
+            android:background="@drawable/filter_un_shape"
+            android:layout_gravity="center_vertical"
+            android:text="Hight to Low"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/lowtohigh"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="7dp"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/product_sans_regular"
+            android:paddingBottom="7dp"
+            android:background="@drawable/filter_un_shape"
+            android:layout_gravity="center_vertical"
+            android:text="Low to High"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/notesRecycler"
+        android:layout_below="@id/filer"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="25dp"
+        android:src="@drawable/ic_baseline_add_24"
+        android:id="@+id/NewNotesButton"
+        android:backgroundTint="@color/green"/>
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/bottom_sheet"
+    android:paddingBottom="40dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <View
+        android:layout_width="100dp"
+        android:background="@drawable/delete_indicator_shape"
+        android:layout_height="7dp"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Are you sure, you want to delete \nthis note ?"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/product_sans_regular"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NO"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:id="@+id/delete_no"
+        android:fontFamily="@font/product_sans_regular"
+        android:background="@drawable/no_delete"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="10dp"
+        android:padding="7dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/delete_yes"
+        android:layout_height="wrap_content"
+        android:text="YES"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/product_sans_regular"
+        android:background="@drawable/yes_delete"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="7dp"/>
+
+</LinearLayout>

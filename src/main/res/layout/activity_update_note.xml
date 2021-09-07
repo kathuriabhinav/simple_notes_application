@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/grey"
+    android:layout_height="match_parent"
+    tools:context=".UpdateNoteActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/edit_text_background"
+                android:padding="15dp"
+                android:id="@+id/upTitle"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/product_sans_regular"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:hint="Title..."/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/edit_text_background"
+                android:padding="15dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="16dp"
+                android:id="@+id/upSubtitle"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/product_sans_regular"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:hint="SubTitle..."/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/black"
+                    android:padding="15dp"
+                    android:textSize="18sp"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/product_sans_regular"
+                    android:text="Priority"/>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/up_green_priority"
+                    android:src="@drawable/ic_baseline_done_24"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/green_shape"/>
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/up_yellow_priority"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/yellow_shape"/>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:id="@+id/up_red_priority"
+                    android:layout_height="25dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/red_shape"/>
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/product_sans_regular"
+                android:background="@drawable/edit_text_background"
+                android:padding="15dp"
+                android:textColor="@color/black"
+                android:gravity="start"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:id="@+id/upNotes"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:hint="Notes..."/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="25dp"
+        android:src="@drawable/ic_baseline_done_24"
+        android:id="@+id/UpdateNotesButton"
+        android:backgroundTint="@color/green"/>
+
+</RelativeLayout>
